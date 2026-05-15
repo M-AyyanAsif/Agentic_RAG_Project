@@ -1,10 +1,9 @@
-# Indus-Guardian: Sovereign Agentic Intelligence
+# Indus-Guardian: Sovereign Agentic Intelligence Project
 
-Local-first Agentic RAG platform designed for privacy-conscious deployments.  
+Agentic RAG platform designed for privacy-conscious deployments.  
 This project demonstrates production architecture for internship  using FastAPI, LangGraph, hybrid retrieval, and a modern Streamlit chat UI.
 
 ## Why This Project
-- Keeps sensitive business/education data local with Ollama-first inference.
 - Uses a transparent LangGraph state machine to explain every agent step.
 - Supports PDF and DOCX document ingestion for practical enterprise workflows.
 - Implements HITL consent before web search to preserve data sovereignty.
@@ -55,7 +54,7 @@ This project demonstrates production architecture for internship  using FastAPI,
   - Pytest
   - Docker compose config validation
 
-## Local-First Privacy Positioning (Pakistani Market)
+## Local-First Privacy Positioning 
 - Document uploads stay within your controlled infra.
 - External web search is user-approved (HITL consent loop).
 - Session data is stored in SQLite for clear, auditable ownership.
