@@ -1,0 +1,79 @@
+:root {
+  --bg: #0b1020;
+  --panel: #121a30;
+  --text: #e6ecff;
+  --accent: #4f9dff;
+  --muted: #94a3b8;
+  --sidebar-btn-bg: #000000;
+  --sidebar-btn-text: #ffffff;
+}
+
+/* 1. REMOVE WHITE BORDERS, PADDING & BOTTOM BAR */
+.stApp {
+  background: radial-gradient(circle at top, #16213e 0%, var(--bg) 55%) !important;
+  color: var(--text);
+}
+
+/* This targets the container that often causes the white bottom bar */
+[data-testid="stBottom"] {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* Removes the extra space at the bottom */
+[data-testid="stAppViewBlockContainer"] {
+    padding-bottom: 2rem !important;
+}
+
+[data-testid="stHeader"], [data-testid="stFooter"] {
+    background-color: transparent !important;
+    color: transparent !important;
+}
+
+/* 2. CHAT INPUT AREA STYLING */
+/* Fix: Make input white, text black, and remove the surrounding white container */
+[data-testid="stChatInput"] {
+    background-color: transparent !important;
+}
+
+[data-testid="stChatInput"] textarea {
+    background-color: #ffffff !important;
+    color: #000000 !important; /* Your message text is now black */
+    border-radius: 10px !important;
+}
+
+/* 3. SIDEBAR BACKGROUND */
+[data-testid="stSidebar"] {
+  background-color: #fff3b0 !important;
+  border-right: 1px solid #e6d27a;
+}
+
+[data-testid="stSidebar"] h2, 
+[data-testid="stSidebar"] h3, 
+[data-testid="stSidebar"] .stMarkdown p, 
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] .stCaption {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+/* SIDEBAR BUTTONS */
+[data-testid="stSidebar"] .stButton > button {
+  background-color: var(--sidebar-btn-bg) !important;
+  color: var(--sidebar-btn-text) !important;
+  border: 1px solid #333333 !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+}
+
+/* 4. CHAT MESSAGES - FORCING WHITE AI TEXT */
+[data-testid="stChatMessage"] {
+  background: rgba(17, 24, 39, 0.75) !important;
+  border: 1px solid #26324f !important;
+  border-radius: 14px !important;
+}
+
+/* Force ALL text inside chat messages to be white */
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] p {
+    color: white !important;
+}
