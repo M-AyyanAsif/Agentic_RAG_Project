@@ -9,3 +9,4 @@ __pycache__/
 backend/logs/
 backend/backups/
 frontend/.streamlit/
+deployment/
