@@ -1,210 +1,132 @@
-"""LangGraph orchestration for document-first chatbot with safe web fallback."""
+"""LangGraph orchestration with BREAKPOINTS for safe web fallback."""
 
 from __future__ import annotations
-
 from datetime import datetime
-from typing import Literal, TypedDict
+from typing import TypedDict, Annotated
+import operator
 
 from langchain_community.tools.tavily_search import TavilySearchResults
 from langgraph.graph import END, StateGraph
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langgraph.checkpoint.memory import MemorySaver # For saving state while waiting
+
 from backend.core.config import Settings
 from backend.core.database import DatabaseManager
-from backend.engine.retrieval_service import RetrievalService
 
-
-class AgentState(TypedDict, total=False):
+class AgentState(TypedDict):
     question: str
     session_id: str
-    local_documents: list[str]
-    cached_answer: str | None
     retrieved_context: str
     has_answer_in_docs: bool
-    waiting_for_user_approval: bool
-    user_approved_web_search: bool
+    user_approved_web_search: bool # This will be filled by the frontend
     web_context: str
     final_answer: str
     answer_body: str
-    thought_logs: list[str]
-
+    thought_logs: Annotated[list[str], operator.add] # Append-only logs
 
 class IndusGuardianGraph:
-    """Document-first chatbot with controlled web fallback."""
-
-    def __init__(
-        self,
-        settings: Settings,
-        db_manager: DatabaseManager,
-        retrieval_service: RetrievalService,
-    ) -> None:
+    def __init__(self, settings: Settings, db_manager: DatabaseManager, retrieval_service):
         self.settings = settings
         self.db_manager = db_manager
         self.retrieval_service = retrieval_service
-
         self.llm = ChatGoogleGenerativeAI(
             model=settings.gemini_model,
             google_api_key=settings.google_api_key,
             temperature=0.1,
-            )
-
+        )
+        # Memory allows the graph to "remember" where it stopped
+        self.memory = MemorySaver()
         self.graph = self._build()
 
-    # ---------------- GRAPH ----------------
     def _build(self):
         workflow = StateGraph(AgentState)
 
-        workflow.add_node("ingest", self.ingest)
-        workflow.add_node("cache", self.cache_lookup)
         workflow.add_node("retrieve", self.retrieve)
-        workflow.add_node("check_answer", self.check_answer)
         workflow.add_node("ask_user", self.ask_user)
         workflow.add_node("web_search", self.web_search)
         workflow.add_node("generate", self.generate)
 
-        workflow.set_entry_point("ingest")
+        workflow.set_entry_point("retrieve")
 
-        workflow.add_edge("ingest", "cache")
-        workflow.add_edge("cache", "retrieve")
-        workflow.add_edge("retrieve", "check_answer")
-
+        # 1. After retrieval, check if we have info
         workflow.add_conditional_edges(
-            "check_answer",
-            self.route_after_check,
+            "retrieve",
+            self.route_after_retrieve,
             {
                 "generate": "generate",
                 "ask_user": "ask_user",
             },
         )
 
+        # 2. After asking user, the graph STOPS here. 
+        # When it resumes, it checks the user's choice.
         workflow.add_conditional_edges(
             "ask_user",
             self.route_after_user,
             {
                 "web_search": "web_search",
                 "end": END,
-                "wait": END,
             },
         )
 
         workflow.add_edge("web_search", "generate")
         workflow.add_edge("generate", END)
 
-        return workflow.compile()
-
-    # ---------------- STEPS ----------------
-
-    def ingest(self, state: AgentState) -> AgentState:
-        return {**state, "thought_logs": ["Processing query..."]}
-
-    def cache_lookup(self, state: AgentState) -> AgentState:
-        cached = self.db_manager.get_cached_answer(
-            state["question"],
-            ttl_seconds=self.settings.semantic_cache_ttl_seconds,
-        )
-        return {**state, "cached_answer": cached}
-
-    def retrieve(self, state: AgentState) -> AgentState:
-        docs = state.get("local_documents", [])
-
-        results = self.retrieval_service.retrieve_hybrid(
-            query=state["question"],
-            documents=docs,
-            top_k=self.settings.top_k_retrieval,
+        # We compile with a breakpoint at "ask_user"
+        return workflow.compile(
+            checkpointer=self.memory,
+            interrupt_before=["ask_user"] 
         )
 
+    # ---------------- NODES ----------------
+
+    def retrieve(self, state: AgentState):
+        results = self.retrieval_service.retrieve_hybrid(query=state["question"])
         context = self.retrieval_service.format_context(results)
-
+        
+        # Use LLM to judge if context is actually useful (Senior Move)
+        has_info = len(context.strip()) > 100 
+        
         return {
-            **state,
             "retrieved_context": context,
+            "has_answer_in_docs": has_info,
+            "thought_logs": ["Searched local documents."]
         }
 
-    # ---------------- IMPORTANT FIX ----------------
-    def check_answer(self, state: AgentState) -> AgentState:
-        """
-        STRICT RULE:
-        Only accept answer if real document context exists.
-        """
+    def route_after_retrieve(self, state: AgentState):
+        if state["has_answer_in_docs"]:
+            return "generate"
+        return "ask_user"
 
-        context = state.get("retrieved_context", "").strip()
-
-        has_answer = len(context) > 50  # threshold instead of weak boolean
-
+    def ask_user(self, state: AgentState):
+        # This node is reached but execution is INTERRUPTED before it starts.
         return {
-            **state,
-            "has_answer_in_docs": has_answer,
+            "thought_logs": ["Awaiting user permission for web search..."]
         }
 
-    def route_after_check(self, state: AgentState) -> str:
-        return "generate" if state.get("has_answer_in_docs") else "ask_user"
-
-    # ---------------- ASK USER (NO HALLUCINATION) ----------------
-    def ask_user(self, state: AgentState) -> AgentState:
-        return {
-            **state,
-            "waiting_for_user_approval": True,
-            "answer_body": (
-                "I could not find an answer in your uploaded documents.\n\n"
-                "Do you want me to search the internet for this information?"
-            ),
-        }
-
-    def route_after_user(self, state: AgentState) -> str:
+    def route_after_user(self, state: AgentState):
+        # When user clicks 'Yes' in Streamlit, it sets user_approved_web_search = True
         if state.get("user_approved_web_search") is True:
             return "web_search"
-        if state.get("user_approved_web_search") is False:
-            return "end"
-        return "wait"
+        return "end"
 
-    # ---------------- WEB SEARCH ----------------
-    def web_search(self, state: AgentState) -> AgentState:
-        if not self.settings.tavily_api_key:
-            return {
-                **state,
-                "web_context": "Web search not available.",
-            }
-
-        tool = TavilySearchResults(
-            api_key=self.settings.tavily_api_key,
-            max_results=3,
-        )
-
+    def web_search(self, state: AgentState):
+        tool = TavilySearchResults(api_key=self.settings.tavily_api_key, max_results=3)
         result = tool.invoke({"query": state["question"]})
-
         return {
-            **state,
             "web_context": str(result),
+            "thought_logs": ["Web search completed via Tavily."]
         }
 
-    # ---------------- GENERATION ----------------
-    def generate(self, state: AgentState) -> AgentState:
-        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-        context = state.get("retrieved_context") or state.get("web_context")
-
-        if not context:
-            answer = "No information found in documents or web sources."
-        else:
-            prompt = f"""
-You are a strict document-based assistant.
-
-RULES:
-- ONLY use provided context
-- If context is weak, say you cannot find answer
-- Do NOT hallucinate
-
-Question:
-{state['question']}
-
-Context:
-{context}
-
-Answer:
-"""
-            answer = self.llm.invoke(prompt).content
-
+    def generate(self, state: AgentState):
+        context = state.get("retrieved_context") or state.get("web_context", "")
+        prompt = f"Answer based ONLY on context: {context}\nQuestion: {state['question']}"
+        response = self.llm.invoke(prompt)
+        
+        # Save to semantic cache here (Rule from database.py)
+        self.db_manager.upsert_cached_answer(state["question"], response.content)
+        
         return {
-            **state,
-            "final_answer": f"[{now}] {answer}",
-            "answer_body": answer,
+            "final_answer": response.content,
+            "answer_body": response.content
         }

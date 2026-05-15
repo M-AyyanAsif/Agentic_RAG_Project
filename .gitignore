@@ -10,3 +10,5 @@ backend/logs/
 backend/backups/
 frontend/.streamlit/
 deployment/
+.env.example
+.env.template.windows

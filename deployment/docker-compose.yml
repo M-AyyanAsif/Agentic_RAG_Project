@@ -11,9 +11,14 @@ services:
     ports:
       - "8000:8000"
     restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 2G  # Keeps 6GB free for Windows/Browser
     volumes:
-      # This maps your local code: Change code -> Container updates instantly
+      # Code mapping for Hot Reload
       - ../backend:/app/backend
+      # Named volumes for high-speed SQLite/Log access
       - indus_guardian_data:/app/backend/data
       - indus_guardian_logs:/app/backend/logs
     networks:
@@ -29,15 +34,20 @@ services:
     ports:
       - "8501:8501"
     restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 1G # Streamlit is lightweight
     volumes:
-      # This maps your local frontend code
       - ../frontend:/app/frontend
     networks:
       - indus_network
 
 volumes:
+  # Persistent storage for your SQLite DB and PDFs
   indus_guardian_data:
   indus_guardian_logs:
 
 networks:
   indus_network:
+    driver: bridge

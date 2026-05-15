@@ -1,25 +1,33 @@
-FROM python:3.11-slim
+# Using 3.13-slim to match our optimized local environment
+FROM python:3.13-slim
 
+# Prevent Python from writing .pyc files and enable real-time logging
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
+# Crucial: Ensures Python sees the 'backend' folder as a package
+ENV PYTHONPATH=/app
 
 WORKDIR /app
 
-# Install system dependencies
+# Install system dependencies for NumPy/SQLite and cleanup in one layer
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
+    libsqlite3-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first
+# Copy requirements first for better Docker layer caching
 COPY backend/requirements.txt /app/backend/requirements.txt
 
-# SENIOR FIX: Increased timeout and allowed caching to prevent restart on timeout
-RUN pip install --default-timeout=2000 --no-cache-dir -r /app/backend/requirements.txt
+# Use a high timeout for slower connections; no-cache keeps the image small
+RUN pip install --upgrade pip && \
+    pip install --default-timeout=2000 --no-cache-dir -r /app/backend/requirements.txt
 
-# Copy backend source code
+# Copy backend source code (Docker-compose will override this in dev mode)
 COPY backend /app/backend
 
 EXPOSE 8000
 
-CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Run with Uvicorn. 
+# Added --proxy-headers for if you ever put this behind Nginx
+CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000", "--proxy-headers"]
