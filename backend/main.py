@@ -36,9 +36,11 @@ agent = IndusGuardianGraph(settings, db_manager, retrieval)
 
 app = FastAPI(title="Indus-Guardian Backend")
 
+# This allows your Streamlit UI to safely send documents to this API
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
+    allow_credentials=True,  # Added this for session stability
     allow_methods=["*"],
     allow_headers=["*"],
 )

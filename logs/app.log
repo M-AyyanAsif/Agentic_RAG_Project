@@ -1,0 +1,57 @@
+2026-05-16 01:17:37 AM | INFO | root | Logging configured successfully.
+2026-05-16 01:17:41 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:17:43 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:17:44 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:19:07 AM | INFO | root | Logging configured successfully.
+2026-05-16 01:19:08 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:19:09 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:19:09 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:23:05 AM | INFO | root | Logging configured successfully.
+2026-05-16 01:23:06 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:23:07 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:23:08 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:24:39 AM | INFO | root | Logging configured successfully.
+2026-05-16 01:24:40 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:24:41 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:24:42 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:30:46 AM | INFO | root | Logging configured successfully.
+2026-05-16 01:30:47 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:30:48 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:30:49 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:31:30 AM | INFO | root | Logging configured successfully.
+2026-05-16 01:31:30 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:31:31 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:31:32 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:31:51 AM | INFO | root | Logging configured successfully.
+2026-05-16 01:31:51 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:31:52 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:31:53 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:51:59 AM | INFO | root | Logging configured successfully.
+2026-05-16 01:52:00 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:52:01 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:52:01 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:52:27 AM | INFO | root | Logging configured successfully.
+2026-05-16 01:52:28 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:52:29 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:52:30 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:57:38 AM | INFO | root | Logging configured successfully.
+2026-05-16 01:57:38 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:57:39 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:57:40 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:57:58 AM | INFO | root | Logging configured successfully.
+2026-05-16 01:57:59 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:58:00 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:58:00 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 02:00:11 AM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 02:00:15 AM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 02:01:35 AM | ERROR | backend.engine.retrieval_service | Google Embedding failed: 403 Your API key was reported as leaked. Please use another API key.
+2026-05-16 02:01:48 AM | ERROR | indus-guardian.api | Graph Error: 1 validation error for TavilySearchAPIWrapper
+  Value error, Did not find tavily_api_key, please add an environment variable `TAVILY_API_KEY` which contains it, or pass `tavily_api_key` as a named parameter. [type=value_error, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-16 02:02:54 AM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 02:03:05 AM | ERROR | backend.engine.retrieval_service | Google Embedding failed: 403 Your API key was reported as leaked. Please use another API key.
+2026-05-16 02:03:30 AM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 02:03:35 AM | ERROR | backend.engine.retrieval_service | Google Embedding failed: 403 Your API key was reported as leaked. Please use another API key.
+2026-05-16 02:03:38 AM | ERROR | indus-guardian.api | Graph Error: 1 validation error for TavilySearchAPIWrapper
+  Value error, Did not find tavily_api_key, please add an environment variable `TAVILY_API_KEY` which contains it, or pass `tavily_api_key` as a named parameter. [type=value_error, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
