@@ -55,3 +55,963 @@
 2026-05-16 02:03:38 AM | ERROR | indus-guardian.api | Graph Error: 1 validation error for TavilySearchAPIWrapper
   Value error, Did not find tavily_api_key, please add an environment variable `TAVILY_API_KEY` which contains it, or pass `tavily_api_key` as a named parameter. [type=value_error, input_value={}, input_type=dict]
     For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-16 10:50:31 AM | INFO | root | Logging configured successfully.
+2026-05-16 10:50:34 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 10:50:36 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 10:50:37 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 10:51:40 AM | INFO | root | Logging configured successfully.
+2026-05-16 10:51:40 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 10:52:50 AM | INFO | root | Logging configured successfully.
+2026-05-16 10:52:50 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 10:52:52 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 10:52:53 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 10:53:11 AM | INFO | root | Logging configured successfully.
+2026-05-16 10:53:12 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 10:53:14 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 10:53:14 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 10:56:23 AM | INFO | root | Logging configured successfully.
+2026-05-16 10:56:24 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 10:56:25 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 10:56:26 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 10:56:45 AM | INFO | root | Logging configured successfully.
+2026-05-16 10:56:45 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 10:56:49 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 10:56:50 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:09:04 AM | INFO | root | Logging configured successfully.
+2026-05-16 11:09:06 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:09:08 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:09:09 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:10:33 AM | INFO | root | Logging configured successfully.
+2026-05-16 11:10:33 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:10:34 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:10:35 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:12:55 AM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 11:14:14 AM | ERROR | backend.engine.retrieval_service | Google Embedding failed: 403 Your API key was reported as leaked. Please use another API key.
+2026-05-16 11:16:07 AM | ERROR | backend.engine.retrieval_service | Google Embedding failed: 403 Your API key was reported as leaked. Please use another API key.
+2026-05-16 11:33:55 AM | INFO | root | Logging configured successfully.
+2026-05-16 11:33:56 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:33:57 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:33:58 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:34:19 AM | INFO | root | Logging configured successfully.
+2026-05-16 11:34:20 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:34:20 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:34:21 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:34:33 AM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 11:35:07 AM | INFO | pinecone.index | Querying index with top_k=5
+2026-05-16 11:35:11 AM | INFO | backend.engine.retrieval_service | Retrieved 0 relevant chunks from Pinecone.
+2026-05-16 11:39:48 AM | INFO | root | Logging configured successfully.
+2026-05-16 11:39:48 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:39:50 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:39:51 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:40:53 AM | INFO | root | Logging configured successfully.
+2026-05-16 11:40:53 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:40:55 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:40:56 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:41:53 AM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 11:42:03 AM | INFO | pinecone.index | Querying index with top_k=5
+2026-05-16 11:42:05 AM | INFO | backend.engine.retrieval_service | Retrieved 0 relevant chunks from Pinecone (Namespace: None).
+2026-05-16 11:43:36 AM | INFO | root | Logging configured successfully.
+2026-05-16 11:43:36 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:43:37 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:43:38 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:44:00 AM | INFO | root | Logging configured successfully.
+2026-05-16 11:44:01 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:44:02 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:44:02 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:44:42 AM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 11:44:54 AM | INFO | pinecone.index | Querying index with top_k=5
+2026-05-16 11:44:56 AM | INFO | backend.engine.retrieval_service | Retrieved 0 relevant chunks from Pinecone (Namespace: None).
+2026-05-16 11:52:06 AM | INFO | root | Logging configured successfully.
+2026-05-16 11:52:07 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:52:09 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:52:10 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:52:36 AM | INFO | root | Logging configured successfully.
+2026-05-16 11:52:37 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:52:38 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:52:39 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:55:38 AM | INFO | root | Logging configured successfully.
+2026-05-16 11:55:38 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:55:40 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:55:40 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:59:16 AM | INFO | root | Logging configured successfully.
+2026-05-16 11:59:16 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:59:18 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:59:18 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 11:59:19 AM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 11:59:25 AM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 11:59:25 AM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:05:59 PM | INFO | root | Logging configured successfully.
+2026-05-16 12:06:00 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:06:01 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:06:02 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:06:03 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:06:04 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:06:04 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:06:40 PM | INFO | root | Logging configured successfully.
+2026-05-16 12:06:41 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:06:45 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:06:47 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:06:47 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:06:48 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:06:49 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:07:07 PM | INFO | root | Logging configured successfully.
+2026-05-16 12:07:07 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:07:08 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:07:09 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:07:09 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:07:10 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:07:10 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:08:04 PM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 12:08:04 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks...
+2026-05-16 12:08:07 PM | ERROR | backend.engine.document_processor | Pinecone indexing failed: 404 models/text-embedding-004 is not found for API version v1beta, or is not supported for embedContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+2026-05-16 12:08:07 PM | ERROR | indus-guardian.api | Upload/Indexing failed: 404 models/text-embedding-004 is not found for API version v1beta, or is not supported for embedContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+2026-05-16 12:16:02 PM | INFO | root | Logging configured successfully.
+2026-05-16 12:16:04 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:16:05 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:16:05 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:16:06 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:16:07 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:16:07 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:18:22 PM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 12:18:22 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks...
+2026-05-16 12:18:54 PM | INFO | pinecone.index | Upserting 47 vectors into namespace 'cac80bd6-9bad-4da9-96d3-620abc1e6d67'
+2026-05-16 12:19:03 PM | ERROR | backend.engine.document_processor | Pinecone indexing failed: [400] Vector dimension 3072 does not match the dimension of the index 1024
+2026-05-16 12:19:03 PM | ERROR | indus-guardian.api | Upload/Indexing failed: [400] Vector dimension 3072 does not match the dimension of the index 1024
+2026-05-16 12:25:10 PM | INFO | root | Logging configured successfully.
+2026-05-16 12:25:11 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:25:13 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:25:14 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:25:14 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:25:15 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:25:15 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:26:44 PM | INFO | root | Logging configured successfully.
+2026-05-16 12:26:44 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:26:46 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:26:46 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:26:47 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:26:47 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:26:48 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:27:15 PM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 12:27:16 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks...
+2026-05-16 12:27:49 PM | INFO | pinecone.index | Upserting 47 vectors into namespace '0b81984b-b3b2-4efd-bfdc-04811a0d7a2f'
+2026-05-16 12:27:55 PM | INFO | backend.engine.document_processor | Success: Indexed 47 chunks in namespace: 0b81984b-b3b2-4efd-bfdc-04811a0d7a2f
+2026-05-16 12:27:55 PM | INFO | indus-guardian.api | Successfully indexed document NIPS-2017-attention-is-all-you-need-Paper.pdf for session 0b81984b-b3b2-4efd-bfdc-04811a0d7a2f
+2026-05-16 12:32:10 PM | INFO | root | Logging configured successfully.
+2026-05-16 12:32:11 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:32:12 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:32:12 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:32:13 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:32:14 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:32:14 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:32:16 PM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 12:32:17 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks...
+2026-05-16 12:32:49 PM | INFO | pinecone.index | Upserting 47 vectors into namespace 'ce66a9ba-5955-4511-88b8-66a5a441be43'
+2026-05-16 12:33:00 PM | INFO | backend.engine.document_processor | Success: Indexed 47 chunks in namespace: ce66a9ba-5955-4511-88b8-66a5a441be43
+2026-05-16 12:33:00 PM | INFO | indus-guardian.api | Successfully indexed document NIPS-2017-attention-is-all-you-need-Paper.pdf for session ce66a9ba-5955-4511-88b8-66a5a441be43
+2026-05-16 12:33:37 PM | INFO | pinecone.index | Querying index with top_k=5
+2026-05-16 12:33:38 PM | INFO | backend.engine.retrieval_service | Retrieved 5 relevant chunks from Pinecone (Namespace: ce66a9ba-5955-4511-88b8-66a5a441be43).
+2026-05-16 12:33:40 PM | INFO | pinecone.index | Querying index with top_k=5
+2026-05-16 12:33:40 PM | INFO | backend.engine.retrieval_service | Retrieved 0 relevant chunks from Pinecone (Namespace: None).
+2026-05-16 12:42:05 PM | INFO | root | Logging configured successfully.
+2026-05-16 12:42:06 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:42:07 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:42:08 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:42:08 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:42:09 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:42:10 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:42:43 PM | INFO | backend.engine.document_processor | Parsed PDF with 52 pages
+2026-05-16 12:42:43 PM | INFO | backend.engine.document_processor | Generating embeddings for 38 chunks...
+2026-05-16 12:43:07 PM | INFO | pinecone.index | Upserting 38 vectors into namespace 'd8034911-f597-4f12-a6eb-efc61b0dd6be'
+2026-05-16 12:43:15 PM | INFO | backend.engine.document_processor | Success: Indexed 38 chunks in namespace: d8034911-f597-4f12-a6eb-efc61b0dd6be
+2026-05-16 12:43:39 PM | INFO | indus-guardian.api | Exhaustive Search: Checking Pinecone namespace d8034911-f597-4f12-a6eb-efc61b0dd6be
+2026-05-16 12:43:40 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 12:43:42 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: d8034911-f597-4f12-a6eb-efc61b0dd6be).
+2026-05-16 12:43:43 PM | INFO | pinecone.index | Querying index with top_k=5
+2026-05-16 12:43:43 PM | INFO | backend.engine.retrieval_service | Retrieved 0 relevant chunks from Pinecone (Namespace: None).
+2026-05-16 12:52:25 PM | INFO | root | Logging configured successfully.
+2026-05-16 12:52:27 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:52:28 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:52:28 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:52:29 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:52:30 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:52:30 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:53:45 PM | INFO | root | Logging configured successfully.
+2026-05-16 12:53:46 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:53:47 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:53:47 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:53:48 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 12:53:49 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 12:53:49 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 12:54:09 PM | INFO | backend.engine.document_processor | Parsed PDF with 11 pages
+2026-05-16 12:54:09 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks...
+2026-05-16 12:54:39 PM | ERROR | backend.engine.document_processor | Pinecone indexing failed: 429 Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.
+2026-05-16 12:54:39 PM | ERROR | indus-guardian.api | Upload failed: 429 Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.
+2026-05-16 01:00:35 PM | INFO | root | Logging configured successfully.
+2026-05-16 01:00:36 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:00:38 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:00:39 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:00:40 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:00:42 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:00:42 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:01:18 PM | INFO | backend.engine.document_processor | Parsed PDF with 52 pages
+2026-05-16 01:01:18 PM | INFO | backend.engine.document_processor | Generating embeddings for 38 chunks using models/embedding-001...
+2026-05-16 01:01:18 PM | ERROR | backend.engine.document_processor | Pinecone indexing failed: 404 models/embedding-001 is not found for API version v1beta, or is not supported for embedContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+2026-05-16 01:01:18 PM | ERROR | indus-guardian.api | Upload failed: cannot access local variable 'e' where it is not associated with a value
+2026-05-16 01:12:27 PM | INFO | root | Logging configured successfully.
+2026-05-16 01:12:28 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:12:30 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:12:30 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:12:31 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:12:31 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:12:32 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:12:58 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 01:13:38 PM | INFO | pinecone.index | Upserting 47 vectors into namespace 'fbc91188-dc26-433b-b754-2f6d1317ed53'
+2026-05-16 01:13:43 PM | INFO | backend.engine.document_processor | Success: Indexed 47 chunks in namespace: fbc91188-dc26-433b-b754-2f6d1317ed53
+2026-05-16 01:14:00 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace 'fbc91188-dc26-433b-b754-2f6d1317ed53'
+2026-05-16 01:14:01 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 01:14:02 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: fbc91188-dc26-433b-b754-2f6d1317ed53).
+2026-05-16 01:14:02 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace 'fbc91188-dc26-433b-b754-2f6d1317ed53'
+2026-05-16 01:14:02 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 01:14:04 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: fbc91188-dc26-433b-b754-2f6d1317ed53).
+2026-05-16 01:14:04 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 01:14:11 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 01:14:11 PM | WARNING | indus-guardian.graph | Cache save bypassed: Error binding parameter 3: type 'list' is not supported
+2026-05-16 01:14:11 PM | ERROR | indus-guardian.api | Stream Core Panic Exception: Error binding parameter 3: type 'list' is not supported
+2026-05-16 01:23:38 PM | INFO | root | Logging configured successfully.
+2026-05-16 01:23:38 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:23:40 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:23:41 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:23:41 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:23:43 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:23:44 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:25:55 PM | INFO | root | Logging configured successfully.
+2026-05-16 01:25:55 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:25:57 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:25:57 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:25:58 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:25:59 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:25:59 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:26:18 PM | INFO | root | Logging configured successfully.
+2026-05-16 01:26:18 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:26:19 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:26:20 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:26:20 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 01:26:22 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 01:26:22 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 01:26:51 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 01:27:32 PM | INFO | pinecone.index | Upserting 47 vectors into namespace '73dd2c07-112a-4d26-a927-97923fb5cca0'
+2026-05-16 01:27:40 PM | INFO | backend.engine.document_processor | Success: Indexed 47 chunks in namespace: 73dd2c07-112a-4d26-a927-97923fb5cca0
+2026-05-16 01:27:56 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace '73dd2c07-112a-4d26-a927-97923fb5cca0'
+2026-05-16 01:27:57 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 01:28:01 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 73dd2c07-112a-4d26-a927-97923fb5cca0).
+2026-05-16 01:28:02 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace '73dd2c07-112a-4d26-a927-97923fb5cca0'
+2026-05-16 01:28:02 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 01:28:02 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 73dd2c07-112a-4d26-a927-97923fb5cca0).
+2026-05-16 01:28:02 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 01:28:08 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 01:32:35 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace '73dd2c07-112a-4d26-a927-97923fb5cca0'
+2026-05-16 01:32:36 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 01:32:37 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 73dd2c07-112a-4d26-a927-97923fb5cca0).
+2026-05-16 01:32:37 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace '73dd2c07-112a-4d26-a927-97923fb5cca0'
+2026-05-16 01:32:38 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 01:32:40 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 73dd2c07-112a-4d26-a927-97923fb5cca0).
+2026-05-16 01:32:40 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 01:32:49 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 01:34:49 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace '73dd2c07-112a-4d26-a927-97923fb5cca0'
+2026-05-16 01:34:49 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 01:34:50 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 73dd2c07-112a-4d26-a927-97923fb5cca0).
+2026-05-16 01:34:50 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace '73dd2c07-112a-4d26-a927-97923fb5cca0'
+2026-05-16 01:34:50 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 01:34:51 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 73dd2c07-112a-4d26-a927-97923fb5cca0).
+2026-05-16 01:34:51 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 01:34:54 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 02:16:00 PM | INFO | backend.engine.document_processor | Generating embeddings for 38 chunks using gemini-embedding-2...
+2026-05-16 02:16:31 PM | INFO | pinecone.index | Upserting 38 vectors into namespace 'a58bce43-110c-46ce-a16b-50fd8da79587'
+2026-05-16 02:16:34 PM | INFO | backend.engine.document_processor | Success: Indexed 38 chunks in namespace: a58bce43-110c-46ce-a16b-50fd8da79587
+2026-05-16 02:16:46 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace 'a58bce43-110c-46ce-a16b-50fd8da79587'
+2026-05-16 02:16:47 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 02:16:48 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: a58bce43-110c-46ce-a16b-50fd8da79587).
+2026-05-16 02:16:48 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace 'a58bce43-110c-46ce-a16b-50fd8da79587'
+2026-05-16 02:16:48 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 02:16:48 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: a58bce43-110c-46ce-a16b-50fd8da79587).
+2026-05-16 02:16:48 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 02:16:52 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 02:39:05 PM | INFO | root | Logging configured successfully.
+2026-05-16 02:39:08 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 02:39:09 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 02:39:09 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 02:39:10 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 02:39:10 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 02:39:11 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 02:40:01 PM | INFO | root | Logging configured successfully.
+2026-05-16 02:40:02 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 02:40:03 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 02:40:04 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 02:40:05 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 02:40:06 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 02:40:07 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 02:45:00 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 02:45:42 PM | INFO | pinecone.index | Upserting 47 vectors into namespace 'b08edd40-b2df-4188-84c2-6fbc2e10d549'
+2026-05-16 02:45:51 PM | INFO | backend.engine.document_processor | Success: Indexed 47 chunks in namespace: b08edd40-b2df-4188-84c2-6fbc2e10d549
+2026-05-16 02:48:37 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace 'b08edd40-b2df-4188-84c2-6fbc2e10d549'
+2026-05-16 02:48:40 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 02:48:41 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: b08edd40-b2df-4188-84c2-6fbc2e10d549).
+2026-05-16 02:48:41 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace 'b08edd40-b2df-4188-84c2-6fbc2e10d549'
+2026-05-16 02:48:42 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 02:48:42 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: b08edd40-b2df-4188-84c2-6fbc2e10d549).
+2026-05-16 02:48:42 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 02:48:50 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 02:49:49 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace 'b08edd40-b2df-4188-84c2-6fbc2e10d549'
+2026-05-16 02:49:50 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 02:49:52 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: b08edd40-b2df-4188-84c2-6fbc2e10d549).
+2026-05-16 02:49:52 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace 'b08edd40-b2df-4188-84c2-6fbc2e10d549'
+2026-05-16 02:49:54 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 02:49:54 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: b08edd40-b2df-4188-84c2-6fbc2e10d549).
+2026-05-16 02:49:54 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 02:50:01 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 03:07:16 PM | INFO | root | Logging configured successfully.
+2026-05-16 03:07:17 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:07:18 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:07:19 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:07:19 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:07:20 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:07:21 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:07:54 PM | INFO | root | Logging configured successfully.
+2026-05-16 03:07:55 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:07:56 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:07:56 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:07:57 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:07:58 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:07:58 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:08:28 PM | INFO | backend.engine.document_processor | Generating embeddings for 38 chunks using gemini-embedding-2...
+2026-05-16 03:09:04 PM | INFO | pinecone.index | Upserting 38 vectors into namespace 'b025b121-2d95-4510-be1a-423f921d5104'
+2026-05-16 03:09:11 PM | INFO | backend.engine.document_processor | Success: Indexed 38 chunks in namespace: b025b121-2d95-4510-be1a-423f921d5104
+2026-05-16 03:11:02 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace 'b025b121-2d95-4510-be1a-423f921d5104'
+2026-05-16 03:11:03 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 03:11:04 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: b025b121-2d95-4510-be1a-423f921d5104).
+2026-05-16 03:11:04 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace 'b025b121-2d95-4510-be1a-423f921d5104'
+2026-05-16 03:11:04 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 03:11:04 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: b025b121-2d95-4510-be1a-423f921d5104).
+2026-05-16 03:11:04 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 03:11:11 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 03:11:12 PM | ERROR | indus-guardian.api | Stream Core Panic Exception: cannot access local variable 'final_ans' where it is not associated with a value
+2026-05-16 03:13:13 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace 'b025b121-2d95-4510-be1a-423f921d5104'
+2026-05-16 03:13:14 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 03:13:16 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: b025b121-2d95-4510-be1a-423f921d5104).
+2026-05-16 03:13:16 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace 'b025b121-2d95-4510-be1a-423f921d5104'
+2026-05-16 03:13:17 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 03:13:18 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: b025b121-2d95-4510-be1a-423f921d5104).
+2026-05-16 03:13:18 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 03:13:25 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 03:13:25 PM | ERROR | indus-guardian.api | Stream Core Panic Exception: cannot access local variable 'final_ans' where it is not associated with a value
+2026-05-16 03:30:19 PM | INFO | root | Logging configured successfully.
+2026-05-16 03:30:21 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:30:22 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:30:22 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:30:23 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:30:24 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:30:25 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:30:27 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 03:30:38 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 8. Retrying in 1.0s...
+2026-05-16 03:31:17 PM | INFO | pinecone.index | Upserting 47 vectors into namespace '8b132730-e6c8-4751-acf3-94322d009b82'
+2026-05-16 03:31:26 PM | INFO | backend.engine.document_processor | Success: Indexed 47 chunks in namespace: 8b132730-e6c8-4751-acf3-94322d009b82
+2026-05-16 03:31:32 PM | INFO | backend.engine.document_processor | Generating embeddings for 38 chunks using gemini-embedding-2...
+2026-05-16 03:32:17 PM | INFO | pinecone.index | Upserting 38 vectors into namespace 'ac11e577-1fe1-4e4f-9c2f-bd2e754f1c93'
+2026-05-16 03:32:28 PM | INFO | backend.engine.document_processor | Success: Indexed 38 chunks in namespace: ac11e577-1fe1-4e4f-9c2f-bd2e754f1c93
+2026-05-16 03:34:49 PM | INFO | root | Logging configured successfully.
+2026-05-16 03:34:50 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:34:59 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:35:00 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:35:00 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:35:02 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:35:02 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:35:42 PM | INFO | root | Logging configured successfully.
+2026-05-16 03:35:47 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:36:38 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:36:39 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:36:40 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:36:46 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:36:46 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:38:53 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 03:39:38 PM | INFO | pinecone.index | Upserting 47 vectors into namespace '57d3fb02-c146-43dd-8d0e-0f158c3c105e'
+2026-05-16 03:39:47 PM | INFO | backend.engine.document_processor | Success: Indexed 47 chunks in namespace: 57d3fb02-c146-43dd-8d0e-0f158c3c105e
+2026-05-16 03:40:03 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace '57d3fb02-c146-43dd-8d0e-0f158c3c105e'
+2026-05-16 03:40:03 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 03:40:04 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 57d3fb02-c146-43dd-8d0e-0f158c3c105e).
+2026-05-16 03:40:05 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace '57d3fb02-c146-43dd-8d0e-0f158c3c105e'
+2026-05-16 03:40:05 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 03:40:06 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 57d3fb02-c146-43dd-8d0e-0f158c3c105e).
+2026-05-16 03:40:06 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 03:40:14 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 03:41:31 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace '57d3fb02-c146-43dd-8d0e-0f158c3c105e'
+2026-05-16 03:41:31 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 03:41:32 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 57d3fb02-c146-43dd-8d0e-0f158c3c105e).
+2026-05-16 03:41:32 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace '57d3fb02-c146-43dd-8d0e-0f158c3c105e'
+2026-05-16 03:41:32 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 03:41:33 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 57d3fb02-c146-43dd-8d0e-0f158c3c105e).
+2026-05-16 03:41:33 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 03:41:38 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 03:49:42 PM | INFO | root | Logging configured successfully.
+2026-05-16 03:49:44 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:49:45 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:49:45 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:49:46 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:49:47 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:49:47 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:50:48 PM | INFO | root | Logging configured successfully.
+2026-05-16 03:50:50 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:50:51 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:50:51 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 03:50:52 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 03:50:52 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 03:50:53 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:03:33 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:03:34 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:03:36 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:03:36 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:03:37 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:03:38 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:03:38 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:03:41 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 04:04:21 PM | INFO | pinecone.index | Upserting 47 vectors into namespace '46655099-d63a-4ef3-a9e8-a83f3591c423'
+2026-05-16 04:04:24 PM | INFO | backend.engine.document_processor | Success: Indexed 47 chunks in namespace: 46655099-d63a-4ef3-a9e8-a83f3591c423
+2026-05-16 04:04:36 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 04:05:16 PM | INFO | pinecone.index | Upserting 47 vectors into namespace '78e66c58-0ea5-4699-8017-26fc4a39dddf'
+2026-05-16 04:05:23 PM | INFO | backend.engine.document_processor | Success: Indexed 47 chunks in namespace: 78e66c58-0ea5-4699-8017-26fc4a39dddf
+2026-05-16 04:06:11 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace '78e66c58-0ea5-4699-8017-26fc4a39dddf'
+2026-05-16 04:06:11 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:06:12 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 78e66c58-0ea5-4699-8017-26fc4a39dddf).
+2026-05-16 04:06:12 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace '78e66c58-0ea5-4699-8017-26fc4a39dddf'
+2026-05-16 04:06:13 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:06:13 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 78e66c58-0ea5-4699-8017-26fc4a39dddf).
+2026-05-16 04:06:13 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 04:06:20 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 04:06:57 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace '78e66c58-0ea5-4699-8017-26fc4a39dddf'
+2026-05-16 04:06:58 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:07:03 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 78e66c58-0ea5-4699-8017-26fc4a39dddf).
+2026-05-16 04:07:03 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace '78e66c58-0ea5-4699-8017-26fc4a39dddf'
+2026-05-16 04:07:04 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:07:07 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 78e66c58-0ea5-4699-8017-26fc4a39dddf).
+2026-05-16 04:07:07 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 04:07:13 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 04:07:54 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace '78e66c58-0ea5-4699-8017-26fc4a39dddf'
+2026-05-16 04:07:54 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:07:59 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 78e66c58-0ea5-4699-8017-26fc4a39dddf).
+2026-05-16 04:07:59 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace '78e66c58-0ea5-4699-8017-26fc4a39dddf'
+2026-05-16 04:08:00 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:08:01 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 78e66c58-0ea5-4699-8017-26fc4a39dddf).
+2026-05-16 04:08:01 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 04:08:10 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 04:08:34 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace '78e66c58-0ea5-4699-8017-26fc4a39dddf'
+2026-05-16 04:08:36 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:08:39 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 78e66c58-0ea5-4699-8017-26fc4a39dddf).
+2026-05-16 04:08:39 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace '78e66c58-0ea5-4699-8017-26fc4a39dddf'
+2026-05-16 04:08:41 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:08:42 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 78e66c58-0ea5-4699-8017-26fc4a39dddf).
+2026-05-16 04:08:42 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 04:08:53 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 04:10:27 PM | INFO | backend.engine.document_processor | Generating embeddings for 38 chunks using gemini-embedding-2...
+2026-05-16 04:11:01 PM | INFO | pinecone.index | Upserting 38 vectors into namespace 'eb113904-d082-4b6b-9bce-84c7f468b377'
+2026-05-16 04:11:06 PM | INFO | backend.engine.document_processor | Success: Indexed 38 chunks in namespace: eb113904-d082-4b6b-9bce-84c7f468b377
+2026-05-16 04:11:18 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace 'eb113904-d082-4b6b-9bce-84c7f468b377'
+2026-05-16 04:11:18 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:11:19 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: eb113904-d082-4b6b-9bce-84c7f468b377).
+2026-05-16 04:11:19 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace 'eb113904-d082-4b6b-9bce-84c7f468b377'
+2026-05-16 04:11:19 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:11:20 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: eb113904-d082-4b6b-9bce-84c7f468b377).
+2026-05-16 04:11:20 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 04:11:27 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 04:18:13 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:18:16 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:18:17 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:18:18 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:18:18 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:18:20 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:18:20 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:26:35 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:26:36 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:26:40 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:26:41 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:26:42 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:26:43 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:26:43 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:27:04 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:27:05 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:27:07 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:27:08 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:27:09 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:27:10 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:27:11 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:27:15 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 04:28:00 PM | INFO | pinecone.index | Upserting 47 vectors into namespace 'cd76b9f7-4d69-4ce3-83ef-e4eff87c94ba'
+2026-05-16 04:28:05 PM | INFO | backend.engine.document_processor | Success: Indexed 47 chunks in namespace: cd76b9f7-4d69-4ce3-83ef-e4eff87c94ba
+2026-05-16 04:28:48 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:28:49 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:28:50 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:28:50 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:28:51 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:28:52 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:28:53 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:29:11 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:29:11 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:29:12 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:29:13 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:29:13 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:29:14 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:29:15 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:29:49 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 04:30:28 PM | INFO | pinecone.index | Upserting 47 vectors into namespace '15faf75f-6c55-4584-848d-c9d6457aab24'
+2026-05-16 04:30:32 PM | INFO | backend.engine.document_processor | Success: Indexed 47 chunks in namespace: 15faf75f-6c55-4584-848d-c9d6457aab24
+2026-05-16 04:30:42 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace '15faf75f-6c55-4584-848d-c9d6457aab24'
+2026-05-16 04:30:43 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:30:44 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 15faf75f-6c55-4584-848d-c9d6457aab24).
+2026-05-16 04:30:44 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace '15faf75f-6c55-4584-848d-c9d6457aab24'
+2026-05-16 04:30:45 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:30:45 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 15faf75f-6c55-4584-848d-c9d6457aab24).
+2026-05-16 04:30:45 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 04:30:55 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 04:31:31 PM | INFO | backend.engine.document_processor | Generating embeddings for 38 chunks using gemini-embedding-2...
+2026-05-16 04:31:37 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 5. Retrying in 1.0s...
+2026-05-16 04:31:39 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 5. Retrying in 2.0s...
+2026-05-16 04:32:09 PM | INFO | pinecone.index | Upserting 38 vectors into namespace '6448d371-51cf-413a-bd48-0339715f7fd2'
+2026-05-16 04:32:14 PM | INFO | backend.engine.document_processor | Success: Indexed 38 chunks in namespace: 6448d371-51cf-413a-bd48-0339715f7fd2
+2026-05-16 04:32:27 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace '6448d371-51cf-413a-bd48-0339715f7fd2'
+2026-05-16 04:32:27 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:32:28 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 6448d371-51cf-413a-bd48-0339715f7fd2).
+2026-05-16 04:32:28 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace '6448d371-51cf-413a-bd48-0339715f7fd2'
+2026-05-16 04:32:29 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:32:29 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 6448d371-51cf-413a-bd48-0339715f7fd2).
+2026-05-16 04:32:29 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 04:32:35 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 04:43:20 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:43:21 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:43:22 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:43:23 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:43:23 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:43:24 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:43:24 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:43:43 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:43:43 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:43:45 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:43:45 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:43:45 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:43:47 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:43:47 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:44:11 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:44:11 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:44:12 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:44:13 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:44:13 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:44:14 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:44:14 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:44:31 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:44:32 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:44:33 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:44:33 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:44:34 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:44:35 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:44:35 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:44:41 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 04:45:20 PM | INFO | pinecone.index | Upserting 47 vectors into namespace 'd72bc206-b23e-4fd1-9278-582fe0d88cea'
+2026-05-16 04:45:24 PM | INFO | backend.engine.document_processor | Success: Indexed 47 chunks in namespace: d72bc206-b23e-4fd1-9278-582fe0d88cea
+2026-05-16 04:45:34 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace 'd72bc206-b23e-4fd1-9278-582fe0d88cea'
+2026-05-16 04:45:35 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:45:36 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: d72bc206-b23e-4fd1-9278-582fe0d88cea).
+2026-05-16 04:45:36 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace 'd72bc206-b23e-4fd1-9278-582fe0d88cea'
+2026-05-16 04:45:39 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:45:40 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: d72bc206-b23e-4fd1-9278-582fe0d88cea).
+2026-05-16 04:45:40 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 04:45:47 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 04:46:40 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace 'd72bc206-b23e-4fd1-9278-582fe0d88cea'
+2026-05-16 04:46:42 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:46:44 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: d72bc206-b23e-4fd1-9278-582fe0d88cea).
+2026-05-16 04:46:44 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace 'd72bc206-b23e-4fd1-9278-582fe0d88cea'
+2026-05-16 04:46:45 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:46:45 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: d72bc206-b23e-4fd1-9278-582fe0d88cea).
+2026-05-16 04:46:45 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 04:46:51 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-05-16 04:47:26 PM | INFO | backend.engine.document_processor | Generating embeddings for 38 chunks using gemini-embedding-2...
+2026-05-16 04:47:40 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 11. Retrying in 1.0s...
+2026-05-16 04:48:06 PM | INFO | pinecone.index | Upserting 38 vectors into namespace '82b5b2de-b5e5-46c4-87da-7e5fbc7c5a0b'
+2026-05-16 04:48:11 PM | INFO | backend.engine.document_processor | Success: Indexed 38 chunks in namespace: 82b5b2de-b5e5-46c4-87da-7e5fbc7c5a0b
+2026-05-16 04:48:22 PM | INFO | indus-guardian.api | Exhaustive Search Mode: Checking Pinecone namespace '82b5b2de-b5e5-46c4-87da-7e5fbc7c5a0b'
+2026-05-16 04:48:22 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:48:23 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 82b5b2de-b5e5-46c4-87da-7e5fbc7c5a0b).
+2026-05-16 04:48:23 PM | INFO | indus-guardian.graph | Graph Node Retrieval: Processing queries against namespace '82b5b2de-b5e5-46c4-87da-7e5fbc7c5a0b'
+2026-05-16 04:48:24 PM | INFO | pinecone.index | Querying index with top_k=7
+2026-05-16 04:48:24 PM | INFO | backend.engine.retrieval_service | Retrieved 7 relevant chunks from Pinecone (Namespace: 82b5b2de-b5e5-46c4-87da-7e5fbc7c5a0b).
+2026-05-16 04:48:24 PM | INFO | google_genai.models | AFC is enabled with max remote calls: 10.
+2026-05-16 04:48:24 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-16 04:48:24 PM | INFO | google_genai._api_client | Retrying google.genai._api_client.BaseApiClient._request_once in 1.25 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 35.254821253s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '35s'}]}}.
+2026-05-16 04:48:26 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-16 04:48:26 PM | INFO | google_genai._api_client | Retrying google.genai._api_client.BaseApiClient._request_once in 2.12 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 33.790546293s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33s'}]}}.
+2026-05-16 04:48:28 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-16 04:48:28 PM | INFO | google_genai._api_client | Retrying google.genai._api_client.BaseApiClient._request_once in 4.28 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 31.456752299s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}.
+2026-05-16 04:48:33 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-16 04:48:33 PM | INFO | google_genai._api_client | Retrying google.genai._api_client.BaseApiClient._request_once in 8.66 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 26.960061106s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}.
+2026-05-16 04:48:43 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-16 04:48:43 PM | INFO | google_genai._api_client | Retrying google.genai._api_client.BaseApiClient._request_once in 17 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 16.945411518s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}.
+2026-05-16 04:49:00 PM | INFO | httpx | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-05-16 04:49:00 PM | ERROR | indus-guardian.api | Stream Core Panic Exception: Error calling model 'gemini-3-flash-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 59.57280514s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}
+2026-05-16 04:49:41 PM | INFO | backend.engine.document_processor | Generating embeddings for 38 chunks using gemini-embedding-2...
+2026-05-16 04:50:09 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 22. Retrying in 1.0s...
+2026-05-16 04:50:10 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 22. Retrying in 2.0s...
+2026-05-16 04:50:12 PM | ERROR | backend.engine.document_processor | Pinecone indexing failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-2
+Please retry in 47.142225118s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-2"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 1000
+}
+, retry_delay {
+  seconds: 47
+}
+]
+2026-05-16 04:50:12 PM | ERROR | indus-guardian.api | Upload failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-2
+Please retry in 47.142225118s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-2"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 1000
+}
+, retry_delay {
+  seconds: 47
+}
+]
+2026-05-16 04:51:59 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:52:01 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:52:02 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:52:03 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:52:03 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:52:04 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:52:04 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:52:23 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:52:23 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:52:25 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:52:26 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:52:26 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:52:28 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:52:28 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:58:28 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:58:29 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:58:31 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:58:31 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:58:31 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:58:33 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:58:34 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:58:51 PM | INFO | root | Logging configured successfully.
+2026-05-16 04:58:52 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:58:53 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:58:53 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:58:54 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 04:58:56 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 04:58:56 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 04:59:23 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 04:59:24 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 0. Retrying in 1.0s...
+2026-05-16 04:59:25 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 0. Retrying in 2.0s...
+2026-05-16 04:59:27 PM | ERROR | backend.engine.document_processor | Pinecone indexing failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-2
+Please retry in 32.397070229s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-2"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 1000
+}
+, retry_delay {
+  seconds: 32
+}
+]
+2026-05-16 04:59:27 PM | ERROR | indus-guardian.api | Upload failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-2
+Please retry in 32.397070229s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-2"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 1000
+}
+, retry_delay {
+  seconds: 32
+}
+]
+2026-05-16 05:09:16 PM | INFO | root | Logging configured successfully.
+2026-05-16 05:09:18 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 05:09:19 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 05:09:19 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 05:09:20 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 05:09:21 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 05:09:21 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 05:09:38 PM | INFO | root | Logging configured successfully.
+2026-05-16 05:09:39 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 05:09:40 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 05:09:40 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 05:09:41 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 05:09:41 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 05:09:42 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 05:14:00 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 05:14:01 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 0. Retrying in 1.0s...
+2026-05-16 05:14:03 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 0. Retrying in 2.0s...
+2026-05-16 05:14:05 PM | ERROR | backend.engine.document_processor | Pinecone indexing failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-2
+Please retry in 54.711983737s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-2"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 1000
+}
+, retry_delay {
+  seconds: 54
+}
+]
+2026-05-16 05:14:05 PM | ERROR | indus-guardian.api | Upload failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-2
+Please retry in 54.711983737s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-2"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 1000
+}
+, retry_delay {
+  seconds: 54
+}
+]
+2026-05-16 05:46:50 PM | INFO | root | Logging configured successfully.
+2026-05-16 05:46:51 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 05:46:52 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 05:46:53 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 05:46:53 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 05:46:54 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 05:46:55 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 05:47:15 PM | INFO | root | Logging configured successfully.
+2026-05-16 05:47:15 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 05:47:16 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 05:47:17 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 05:47:18 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 05:47:19 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 05:47:19 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 05:47:51 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 05:47:55 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 3. Retrying in 1.0s...
+2026-05-16 05:47:57 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 3. Retrying in 2.0s...
+2026-05-16 05:47:59 PM | ERROR | backend.engine.document_processor | Pinecone indexing failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-2
+Please retry in 754.190633ms. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-2"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 1000
+}
+, retry_delay {
+}
+]
+2026-05-16 05:47:59 PM | ERROR | indus-guardian.api | Upload failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-2
+Please retry in 754.190633ms. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-2"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 1000
+}
+, retry_delay {
+}
+]
+2026-05-16 05:55:07 PM | INFO | root | Logging configured successfully.
+2026-05-16 05:55:09 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 05:55:13 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 05:55:14 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 05:55:14 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 05:55:16 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 05:55:17 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 05:55:39 PM | INFO | root | Logging configured successfully.
+2026-05-16 05:55:40 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 05:55:43 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 05:55:43 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 05:55:44 PM | INFO | pinecone.client.indexes | Describing index 'indus-guardian-index'
+2026-05-16 05:55:46 PM | INFO | httpx | HTTP Request: GET https://api.pinecone.io/indexes/indus-guardian-index "HTTP/1.1 200 OK"
+2026-05-16 05:55:47 PM | INFO | pinecone.index | Index client created for host https://indus-guardian-index-whrgnrw.svc.aped-4627-b74a.pinecone.io
+2026-05-16 05:55:49 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 05:55:56 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 3. Retrying in 1.0s...
+2026-05-16 05:55:57 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 3. Retrying in 2.0s...
+2026-05-16 05:56:00 PM | ERROR | backend.engine.document_processor | Pinecone indexing failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-2
+Please retry in 59.862125996s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-2"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 1000
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2026-05-16 05:56:00 PM | ERROR | indus-guardian.api | Upload failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-2
+Please retry in 59.862125996s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-2"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 1000
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2026-05-16 05:58:29 PM | INFO | backend.engine.document_processor | Generating embeddings for 47 chunks using gemini-embedding-2...
+2026-05-16 05:58:30 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 0. Retrying in 1.0s...
+2026-05-16 05:58:32 PM | WARNING | backend.engine.document_processor | Rate limit hit on chunk 0. Retrying in 2.0s...
+2026-05-16 05:58:35 PM | ERROR | backend.engine.document_processor | Pinecone indexing failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-2
+Please retry in 25.102180249s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-2"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 1000
+}
+, retry_delay {
+  seconds: 25
+}
+]
+2026-05-16 05:58:35 PM | ERROR | indus-guardian.api | Upload failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-2
+Please retry in 25.102180249s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/embed_content_free_tier_requests"
+  quota_id: "EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-embedding-2"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 1000
+}
+, retry_delay {
+  seconds: 25
+}
+]
