@@ -12,3 +12,4 @@ frontend/.streamlit/
 deployment/
 .env.example
 .env.template.windows
+.env/
