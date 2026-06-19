@@ -1,0 +1,120 @@
+/* Indus-Guardian Professional Stylesheet
+    Optimized for Dark Mode & High-Contrast Sidebar
+*/
+
+:root {
+  --bg: #0b1020;
+  --panel: #121a30;
+  --text: #e6ecff;
+  --accent: #4f9dff;
+  --muted: #94a3b8;
+  --sidebar-btn-bg: #000000;
+  --sidebar-btn-text: #ffffff;
+}
+
+/* 1. GLOBAL APP BACKGROUND & RESET */
+.stApp {
+  background: radial-gradient(circle at top, #16213e 0%, var(--bg) 55%) !important;
+  color: var(--text) !important;
+}
+
+/* Clean up header and footer white space */
+[data-testid="stHeader"], [data-testid="stFooter"] {
+    background-color: transparent !important;
+    color: transparent !important;
+}
+
+/* 2. MAIN CONTENT AREA */
+[data-testid="stAppViewBlockContainer"] {
+    padding-top: 2rem !important;
+    padding-bottom: 5rem !important; /* Extra space for chat input */
+}
+
+/* Scrollbar Customization for Dark Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 10px;
+}
+
+/* 3. CHAT INPUT AREA (CRITICAL FIXES) */
+[data-testid="stBottom"] {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+[data-testid="stChatInput"] {
+    background-color: transparent !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Input Area: White BG, Black Text, and Focus Effect */
+[data-testid="stChatInput"] textarea {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-radius: 12px !important;
+    border: 2px solid transparent !important;
+    transition: border 0.3s ease;
+}
+
+[data-testid="stChatInput"] textarea:focus {
+    border: 2px solid var(--accent) !important;
+}
+
+/* 4. SIDEBAR (CREAM/YELLOW THEME) */
+[data-testid="stSidebar"] {
+  background-color: #fff3b0 !important;
+  border-right: 1px solid #e6d27a;
+}
+
+/* Sidebar Typography */
+[data-testid="stSidebar"] h1, 
+[data-testid="stSidebar"] h2, 
+[data-testid="stSidebar"] h3, 
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] .stCaption {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+/* Sidebar Buttons: Professional Black Style */
+[data-testid="stSidebar"] .stButton > button {
+  background-color: var(--sidebar-btn-bg) !important;
+  color: var(--sidebar-btn-text) !important;
+  border: 1px solid #000000 !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+[data-testid="stSidebar"] .stButton > button:hover {
+  background-color: #333333 !important;
+  transform: translateY(-1px);
+}
+
+/* 5. CHAT MESSAGES */
+[data-testid="stChatMessage"] {
+  background: rgba(17, 24, 39, 0.8) !important;
+  border: 1px solid #30363d !important;
+  border-radius: 16px !important;
+  margin-bottom: 1rem !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Force User and Assistant Text to be readable (White) */
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] li {
+    color: #ffffff !important;
+    font-size: 1.05rem !important;
+}
+
+/* AI Icon/Avatar tweak */
+[data-testid="stChatMessageAssistant"] {
+    border-left: 4px solid var(--accent) !important;
+}

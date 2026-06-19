@@ -1,0 +1,37 @@
+# Sync with backend for consistency and Python 3.13 speed
+FROM python:3.13-slim
+
+# Prevent .pyc files and enable real-time logs
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+# Disable Streamlit telemetry to save bandwidth/resources
+ENV STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+
+WORKDIR /app
+
+# Install curl for health checks, keep it minimal
+RUN apt-get update && apt-get install -y \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first to leverage Docker cache
+COPY frontend/requirements.txt /app/frontend/requirements.txt
+
+# Use high timeout for Lahore network stability
+RUN pip install --upgrade pip && \
+    pip install --default-timeout=2000 --no-cache-dir -r /app/frontend/requirements.txt
+
+# Copy the frontend source code
+COPY frontend /app/frontend
+
+# Set working directory to the frontend folder for the CMD to run correctly
+WORKDIR /app/frontend
+
+EXPOSE 8501
+
+# Run Streamlit with production-ready flags
+# --server.headless=true is best for Docker environments
+CMD ["streamlit", "run", "app.py", \
+     "--server.port", "8501", \
+     "--server.address", "0.0.0.0", \
+     "--server.headless", "true"]

@@ -1,0 +1,53 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile.api
+    container_name: indus_guardian_api
+    env_file:
+      - ../.env
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 2G  # Keeps 6GB free for Windows/Browser
+    volumes:
+      # Code mapping for Hot Reload
+      - ../backend:/app/backend
+      # Named volumes for high-speed SQLite/Log access
+      - indus_guardian_data:/app/backend/data
+      - indus_guardian_logs:/app/backend/logs
+    networks:
+      - indus_network
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile.ui
+    container_name: indus_guardian_ui
+    depends_on:
+      - backend
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 1G # Streamlit is lightweight
+    volumes:
+      - ../frontend:/app/frontend
+    networks:
+      - indus_network
+
+volumes:
+  # Persistent storage for your SQLite DB and PDFs
+  indus_guardian_data:
+  indus_guardian_logs:
+
+networks:
+  indus_network:
+    driver: bridge
